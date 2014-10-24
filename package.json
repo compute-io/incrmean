@@ -1,5 +1,5 @@
 {
-  "name": "compute-incremean",
+  "name": "compute-incrmean",
   "version": "0.0.0",
   "description": "Provides a method to compute an arithmetic mean incrementally.",
   "author": {
@@ -20,15 +20,25 @@
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "git://github.com/compute-io/incremean.git"
+    "url": "git://github.com/compute-io/incrmean.git"
   },
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "average",
+    "avg",
+    "mean",
+    "arithmetic mean",
+    "central tendency",
+    "incremental"
   ],
   "bugs": {
-    "url": "https://github.com/compute-io/incremean/issues"
+    "url": "https://github.com/compute-io/incrmean/issues"
   },
   "dependencies": {},
   "devDependencies": {
