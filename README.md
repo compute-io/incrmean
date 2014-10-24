@@ -79,15 +79,13 @@ The use case for the vector implementation is where you have a known dataset and
 
 The use case for the stream implementation is where you have either (1) a stream source, which may or may not be definite, or (2) a desire to continually stream each updated value.
 
-The incremental implementation overlaps both use cases, but also provides an additional benefit. Namely, this module decouples the acct of updating the mean from the act of consuming the mean.
+The incremental implementation overlaps both use cases, but also provides an additional benefit. Namely, this module decouples the act of updating the mean from the act of consuming the mean.
 
 For example, suppose every 2 seconds your application receives a new value from a remote data source and you want to continuously update the data's mean value.
 
-In a streaming implementation, the updated mean value is either pooled (chunked) or automatically pipe to a new destination. The consumer is ultimately responsible for discarding incoming observations.
+In a streaming implementation, the updated mean value is either pooled (chunked) or automatically piped to a new destination. The consumer is ultimately responsible for discarding incoming observations.
 
-In contrast to the streaming (push) model, an incremental implementation provides a pull model in which consumers can choose when to probe for new values. Instead of observing on a regular interval (streaming), observations may be random.
-
-To this end, this module is more amenable to such observation indeterminacy.
+In contrast to the streaming (push) model, an incremental implementation provides a pull model in which consumers can choose when to probe for new values. Such behavior is important if we consider that, instead of observing on a regular interval (streaming), observations may be random. This module is more amenable to such observation indeterminacy.
 
 
 ## Tests
