@@ -32,7 +32,7 @@ var mean = incrmean();
 
 #### mean( [value] )
 
-If provided a `value`, updates and returns the updated mean value. If no `value` is provided, returns the current mean value.
+If provided a `value`, the method updates and returns the updated mean value. If not provided a `value`, the method returns the current mean value.
 
 ``` javascript
 mean( 2 );
@@ -61,7 +61,7 @@ for ( var i = 0; i < 1000; i++ ) {
 }
 
 console.log( mean() );
-// ~ 0.5
+// returns ~0.5
 ```
 
 To run the example code from the top-level application directory,
