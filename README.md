@@ -75,7 +75,7 @@ $ node ./examples/index.js
 
 The use case for this module differs from the conventional [vector](https://github.com/compute-io/mean) implementation and the [stream](https://github.com/flow-io/?query=mean) implementation.
 
-The use case for the vector implementation is where you have a known dataset and want to calculate a summary statistic (i.e., a single number characterizing the central tendency).
+The use case for the vector implementation is where you have a known dataset and want to calculate a summary statistic (e.g., a single number characterizing the central tendency).
 
 The use case for the stream implementation is where you have either (1) a stream source, which may or may not be definite, or (2) a desire to continually stream each updated value.
 
@@ -85,7 +85,7 @@ For example, suppose every 2 seconds your application receives a new value from 
 
 In a streaming implementation, the updated mean value is either pooled (chunked) or automatically piped to a new destination. The consumer is ultimately responsible for discarding incoming observations.
 
-In contrast to the streaming (push) model, an incremental implementation provides a pull model in which consumers can choose when to probe for new values. Such behavior is important if we consider that, instead of observing on a regular interval (streaming), observations may be random. This module is more amenable to such observation indeterminacy.
+In contrast to the streaming (push) model, an incremental implementation provides a pull model in which consumers can choose when to observe the current value. Such behavior is important if we consider that, instead of observing on a regular interval (streaming), observations may be random. This module is more amenable to such observation indeterminacy.
 
 
 ## Tests
