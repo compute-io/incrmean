@@ -1,3 +1,5 @@
+'use strict';
+
 var incrmean = require( './../lib' );
 
 // Initialize a method to calculate the mean incrementally:
