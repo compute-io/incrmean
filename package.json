@@ -1,6 +1,6 @@
 {
   "name": "compute-incrmean",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Provides a method to compute an arithmetic mean incrementally.",
   "author": {
     "name": "Athan Reines",
